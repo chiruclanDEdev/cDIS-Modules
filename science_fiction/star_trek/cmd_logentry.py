@@ -1,7 +1,8 @@
-from chiruserv import Command
+from chiruserv import CServMod
 from time import time
 
-class logentry(Command):
+class cmd_logentry(CServMod):
+	COMMAND = "LOGENTRY"
 	help = "Do a Star Trek log entry!"
 
 	def onCommand(self, uid, args):
