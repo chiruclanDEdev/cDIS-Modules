@@ -1,7 +1,7 @@
-from chiruserv import CServMod
+from cDIS import cDISModule
 from time import time
 
-class cmd_logentry(CServMod):
+class cmd_logentry(cDISModule):
 	COMMAND = "LOGENTRY"
 	help = "Do a Star Trek log entry!"
 
