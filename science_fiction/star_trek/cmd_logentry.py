@@ -2,8 +2,10 @@ from cDIS import cDISModule
 from time import time
 
 class cmd_logentry(cDISModule):
+	MODULE_CLASS = "COMMAND"
 	COMMAND = "LOGENTRY"
 	help = "Do a Star Trek log entry!"
+	BOT_ID = ''
 
 	def onCommand(self, uid, args):
 		stardate_raw = str(time())
